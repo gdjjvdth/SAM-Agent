@@ -1,9 +1,14 @@
-# 🤖 SAM Agent — Autonomous AI Software Engineering System for Android
+# 🤖 SAM Agent (Beta) — Autonomous AI Software Engineering System for Android
 
 [![GitHub Release](https://img.shields.io/github/v/release/gdjjvdth/SAM-Agent?style=for-the-badge&color=2563eb)](https://github.com/gdjjvdth/SAM-Agent/releases/latest)
+[![Status](https://img.shields.io/badge/Status-Public_Beta-yellow.svg?style=for-the-badge)](https://github.com/gdjjvdth/SAM-Agent)
 [![Platform](https://img.shields.io/badge/Platform-Android_7.0+-10b981.svg?style=for-the-badge&logo=android)](https://github.com/gdjjvdth/SAM-Agent)
 [![License](https://img.shields.io/badge/License-MIT-8b5cf6.svg?style=for-the-badge)](https://github.com/gdjjvdth/SAM-Agent)
 [![Direct Download](https://img.shields.io/badge/Direct_Download-SAMAgent.apk-f97316?style=for-the-badge&logo=android)](https://github.com/gdjjvdth/SAM-Agent/releases/download/v1.0.0/SAMAgent.apk)
+
+> ⚠️ **Public Beta Notice**: SAM Agent is currently in active **Beta** testing. Features and execution environments are fully functional, but you may occasionally encounter edge cases. Feel free to report issues and suggestions to help improve future builds!
+
+---
 
 **SAM Agent** is a full-stack, autonomous software engineering agent engineered specifically for Android devices. Unlike simple API wrappers or chat clients, SAM hosts an entire local execution runtime on your phone — combining a self-contained Linux PRoot environment, an autonomous ReAct loop, direct Magisk/KernelSU root capabilities, and native Android hardware bridges.
 
@@ -13,7 +18,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                           SAM Agent (Android)                           │
+│                        SAM Agent (Beta - Android)                       │
 ├────────────────────────────────┬────────────────────────────────────────┤
 │         Android Layer          │              Engine Layer              │
 │  - Native Java/Kotlin UI       │  - Autonomous ReAct Agent Loop         │
@@ -104,8 +109,9 @@ SAM Agent connects directly to Android hardware capabilities via an internal Pho
 
 | Resource | Link |
 | :--- | :--- |
-| 🚀 **Latest Release** | [GitHub Releases v1.0.0](https://github.com/gdjjvdth/SAM-Agent/releases/tag/v1.0.0) |
+| 🚀 **Latest Beta Release** | [GitHub Releases v1.0.0 (Beta)](https://github.com/gdjjvdth/SAM-Agent/releases/tag/v1.0.0) |
 | 📥 **Direct APK Download** | [SAMAgent.apk (40 MB)](https://github.com/gdjjvdth/SAM-Agent/releases/download/v1.0.0/SAMAgent.apk) |
+| 🏷️ **Version Status** | Public Beta |
 | 📜 **License** | MIT License |
 
 ---
