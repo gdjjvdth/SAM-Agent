@@ -1,53 +1,40 @@
-# 🤖 SAM Agent — Autonomous AI Engineering Agent on Android
+# 🤖 SAM Agent — دليل الاستخدام الشعلي والتقني
 
-**SAM Agent** is a full-stack, autonomous software-engineering AI agent running locally and natively on Android. It bridges a local Python engine, PRoot Linux environment, and Android native capabilities to design, build, test, and deploy software directly on your phone.
+[![GitHub Release](https://img.shields.io/github/v/release/gdjjvdth/SAM-Agent?style=for-the-badge&color=blue)](https://github.com/gdjjvdth/SAM-Agent/releases/latest)
+[![Direct Download](https://img.shields.io/badge/Download-SAMAgent.apk-orange?style=for-the-badge&logo=android)](https://github.com/gdjjvdth/SAM-Agent/releases/download/v1.0.0/SAMAgent.apk)
 
----
-
-## ✨ Key Features
-
-- ⚡ **Local Autonomous Agent Engine**: Runs an AI coding agent with full workspace isolation, file operations, web search, code refactoring, and multi-step execution loops.
-- 📱 **Native Android Terminal & UI**: Built-in VT100 interactive terminal with real-time command suggestions, quick shortcut buttons, and session persistence.
-- 🔓 **Full Device & Magisk/KernelSU Root Access**: Unrestricted capabilities to interact with PRoot environments, host Termux, and real Android root commands (`su` / `sam root`).
-- 🌐 **Automated Localhost & Port Management**: Auto-frees leftover ports, spins up local testing servers, and verifies live web apps with advanced `http_check`.
-- 🌍 **Multilingual & System Auto-Detection**: Supports English, Arabic (العربية), French (Français), Hindi (हिन्दी), and Brazilian Portuguese (Português do Brasil) with automatic device-language matching.
+**SAM Agent** هو وكيل ذكاء اصطناعي مستقل لهندسة البرمجيات يعمل محلياً وبالكامل على نظام أندرويد. يتيح لك بناء وتطوير واختبار التطبيقات، إدارة بيئة Linux PRoot، والتحكم في النظام عبر صلاحيات الروت (Magisk).
 
 ---
 
-## 📥 Installation
+## 🛠️ 1. كيفية استخدام التطبيق فعلياً (Quick Start)
 
-1. Download **`SAMAgent.apk`** from the **Assets** section below.
-2. Install the APK on your Android device (Enable *"Install from unknown sources"* if prompted).
-3. Open **SAM Agent** and grant requested permissions.
-4. The app will initialize the engine and PRoot environment automatically on first launch.
-
----
-
-## 🚀 Usage Guide
-
-### 1. Starting a Conversation & Workspace
-- Open the app to launch a dedicated, isolated workspace.
-- Provide instructions in natural language:
-  - *"Build a responsive modern Pomodoro web application and start a preview server."*
-  - *"Inspect /system/build.prop and check device properties using root."*
-  - *"Write a Python script to scrape and format local news data."*
-
-### 2. Live Web Previews & Localhost Testing
-- When SAM starts a web server, tap the generated `http://localhost:8000/` link to test the live application directly in your browser.
-- SAM automatically tests asset loading (CSS/JS), verifies syntax, and confirms page content before completing the task.
-
-### 3. Using the Interactive Terminal
-- Open the side menu and tap **Terminal** to access the PRoot shell.
-- Use the **Suggestion Bar** above the keyboard for instant command auto-completion (`git`, `python3`, `pkg`, `npm`, `su`, etc.).
-
-### 4. Language & System Settings
-- Navigate to **Settings** (⚙️) from the drawer:
-  - **Interface Language**: Switch between *Auto (System Language)*, English, العربية, Français, हिन्दी, or Português.
-  - **Environment Mode**: Toggle between Native PRoot Linux and Termux bridging.
-  - **Root Mode**: Enable superuser commands for deep system automation via Magisk/KernelSU.
+1. **بدء محادثة جديدة:** عند فتح التطبيق، يتم إنشاء مساحة عمل (Workspace) معزولة وخاصة بالمشروع الحالي لمنع أي تداخل بين المحادثات.
+2. **إعطاء الأوامر:** اكتب طلبك باللغة الطبيعية (بالعربية أو الإنجليزية)، مثال:
+   - *"برمج تطبيق ويب لمتابعة المهام مع تصميم حديث وبدء سيرفر المعاينة."*
+   - *"افحص ملفات نظام الهاتف باستخدام الروت واكتب تقريراً."*
+3. **معاينة الـ Localhost:** عندما يقوم الوكيل بتشغيل سيرفر محلي (مثل )، اضغط على الرابط لمعاينة التطبيق مباشرة في المتصفح. يقوم النظام تلقائياً بفحص الأخطاء وملفات الـ CSS/JS.
 
 ---
 
-## 🛡️ Security & Privacy
-- Zero cloud tracking of your local workspace files.
-- Safe port cleanup and isolated workspace folders for each conversation.
+## 🔑 2. إدارة مفاتيح الـ API ومجموعات النماذج ()
+
+لتجنب توقف الطلبات (Rate Limits) وضمان استمرارية العمل بأعلى أداء:
+1. افتح **الإعدادات (Settings ⚙️)** من القائمة الجانبية.
+2. توجه إلى حقل **حوض مفاتيح النماذج ()**.
+3. قم بإدخال مفاتيح الـ API الخاصة بك مفصولة بفاصلة، هكذا:
+   
+4. ستقوم المنظومة تلقائياً بالتبديل بين المفاتيح في حال تجاوز حدود الاستخدام.
+5. أضف مفتاح البحث (مثل **Tavily** أو **Serper**) في الحقل المخصص للبحث الذكي في الويب.
+
+---
+
+## 🐧 3. بيئة Linux PRoot والروت (Magisk)
+
+- **بيئة لينكس الخفيفة:** يقوم التطبيق تلقائياً بتثبيت بيئة لينكس مدعومة بأدوات (Git, Python3, Package Manager) داخل مساحة تخزين التطبيق.
+- **الوصول الجذري (Root):** عندما يكون وضع العزل (Sandbox) مغلقاً، يمتلك الوكيل حرية كاملة للوصول إلى ملفات النظام (, ) وتنفيذ أوامر الروت الحقيقية عبر Magisk/su.
+
+---
+
+## 📥 التحميل والتثبيت
+- **تحميل ملف التثبيت المباشر:** [SAMAgent.apk](https://github.com/gdjjvdth/SAM-Agent/releases/download/v1.0.0/SAMAgent.apk)
